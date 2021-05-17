@@ -1,0 +1,132 @@
+style.css
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    position: relative;
+}
+.banner {
+    display: none;
+   }
+
+.page-info {
+    width: 100%;
+    display: inline-block;
+    /*  position: absolute;  */
+    left: 100px;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+}
+
+.page-info h2 {
+    padding: 30px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: slategray;
+    line-height: 44px;
+}
+
+.page-info p {
+    padding: 0px 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: slategray;
+    line-height: 44px;
+}
+
+.calculator-wrapper {
+    display: inline-block;
+    padding: 30px;
+    background-color: black;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 12px;
+    column-gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px repeat(4, 1fr);
+    align-content: center;
+    
+    
+}
+
+.button { 
+    background-color: rgb(18, 4, 97);
+    border-radius: 4px;
+    padding: 14px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: honeydew;
+}
+
+.clear {
+    background-color:crimson;
+}
+
+.numbers:hover {
+    background-color: orangered;
+}
+
+#screen {
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  font-size: 25px;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-right: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/*
+.zero {
+    width: auto;
+}
+*/
+
+.operations {
+    background-color: darkslategray;
+    color: floralwhite;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .banner {
+        display: block;
+        width: 100%;
+        font-size: 150px;
+        background-color: royalblue;
+        padding-bottom: 30px;
+    }
+
+    .page-info {
+        float: left;
+    }
+
+    
+
+    /*
+    .calc-pic {
+        float: left;
+    }
+    */
+
+    .calculator-wrapper {
+         float: right; 
+    }
+/*
+    .page-info {
+        float: right;
+    }
+    */
+}
